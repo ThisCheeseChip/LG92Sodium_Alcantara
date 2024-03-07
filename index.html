@@ -10,12 +10,22 @@
     <script>
         if (confirm("Go To The Donut Maker?")) 
         {
-            window.open(href = "second.html");
+            confirm();
         } 
         else 
         {
+            deny();
+        }
+
+        function confirm() {
+            window.open(href = "second.html");
+        }
+
+        function deny() {
             document.getElementById('work').innerHTML = "You wont be able to experience the magic of the Donut Maker";
         }
+        
+
     </script>
 </body>
 </html>
