@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Donut Maker</h1>
+    <img id="image" src="punch.jpg">
+    <br>
+    <button class="button1" onclick = "punched()">Make A Donut</button>
+    <button class="button2" onclick = "revert()">Noooo Revert I Regret</button>
+
+    <br><br>
+
+    <img id="image2" src="punch2.jpg">
+    <br>
+    <button class="button3" onclick = "punched2()">Make A Donut</button>
+    <button class="button4" onclick = "revert2()">Noooo Revert I Regret</button>
+
+
+
+    <script>
+        function punched(){
+            document.getElementById('image').src = 'donut.jpg';
+        }
+
+        function revert(){
+            document.getElementById('image').src = 'punch.jpg';
+        }
+
+        function punched2(){
+            document.getElementById('image2').src = 'donut2.jpg';
+        }
+
+        function revert2(){
+            document.getElementById('image2').src = 'punch2.jpg';
+        }
+
+
+
+    </script>
+</html>
